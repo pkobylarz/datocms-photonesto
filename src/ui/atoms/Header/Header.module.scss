@@ -1,0 +1,56 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.s {
+  margin: 0 0 18px;
+  font-size: 18px;
+
+  @include l {
+    margin: 0 0 18px;
+    font-size: 18px;
+  }
+}
+
+.m {
+  margin: 0 0 18px;
+  font-size: 24px;
+
+  @include l {
+    margin: 0 0 24px;
+    font-size: 36px;
+  }
+}
+
+.l {
+  margin: 0 0 28px;
+  font-size: 40px;
+
+  @include l {
+    margin: 0 0 36px;
+    font-size: 60px;
+  }
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight700 {
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+.noMargin {
+  margin: 0;
+}

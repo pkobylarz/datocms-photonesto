@@ -1,0 +1,33 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0 16px;
+
+  @include s {
+    padding: 0 32px;
+  }
+
+  @include m {
+    padding: 0 64px;
+  }
+
+  @include xl {
+    max-width: 1280px;
+    padding: 0 96px;
+  }
+}
+
+.narrow {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include m {
+    max-width: 720px;
+  }
+}

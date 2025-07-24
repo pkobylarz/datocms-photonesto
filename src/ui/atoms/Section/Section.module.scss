@@ -1,0 +1,41 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.first {
+  padding-top: 100px;
+}
+
+.last {
+  padding-bottom: 18px;
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+  --body-text-paragraph: var(--body-text-paragraph);
+  --link-color: var(--body-text-link);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+  --body-text-paragraph: var(--body-text-paragraph);
+  --link-color: var(--body-text-link);
+}
+
+.light {
+  background-color: var(--white);
+  color: var(--white);
+  --body-text-paragraph: var(--body-text-paragraph);
+  --link-color: var(--body-text-link);
+}
+
+.none {
+  background: none;
+}

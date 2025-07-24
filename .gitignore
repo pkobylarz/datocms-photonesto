@@ -17,6 +17,9 @@
 /build
 
 # misc
+.history
+.qodo
+.vscode
 .DS_Store
 *.pem
 

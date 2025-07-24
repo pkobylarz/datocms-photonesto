@@ -1,0 +1,49 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  display: grid;
+  width: 100%;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.col-1 {
+  grid-template-columns: 1fr;
+}
+
+.col-2 {
+  @include m {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.col-3 {
+  @include m {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.col-4 {
+  @include s {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include m {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-48 {
+  gap: 48px;
+}

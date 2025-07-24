@@ -1,0 +1,39 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.67;
+  color: var(--body-text-paragraph);
+
+  a {
+    color: var(--link-color);
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.s {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.m {
+  margin: 14px 0;
+  font-size: 16px;
+}
+
+.l {
+  margin: 16px 0;
+  font-size: 18px;
+}
+
+.noMargin {
+  margin: 0;
+}

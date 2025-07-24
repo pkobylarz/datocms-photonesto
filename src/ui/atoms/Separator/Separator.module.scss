@@ -1,0 +1,55 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  width: 0;
+}
+
+.mobile-12 {
+  height: 12px;
+}
+
+.mobile-24 {
+  height: 24px;
+}
+
+.mobile-32 {
+  height: 32px;
+}
+
+.mobile-40 {
+  height: 40px;
+}
+
+.mobile-60 {
+  height: 60px;
+}
+
+.desktop-12 {
+  @include m {
+    height: 12px;
+  }
+}
+
+.desktop-24 {
+  @include m {
+    height: 24px;
+  }
+}
+
+.desktop-32 {
+  @include m {
+    height: 32px;
+  }
+}
+
+.desktop-40 {
+  @include m {
+    height: 40px;
+  }
+}
+
+.desktop-60 {
+  @include m {
+    height: 60px;
+  }
+}

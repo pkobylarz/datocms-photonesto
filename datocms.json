@@ -23,7 +23,7 @@
       "value": "secretTokenProtectingWebhookEndpointsFromBeingCalledByAnyone"
     }
   },
-  "livePreviewUrl": "https://datocms-nextjs-starter-kit.vercel.app/",
+  "livePreviewUrl": "https://photonesto.netlify.app/",
   "postDeploy": {
     "type": "apiCall",
     "url": "/api/post-deploy",

@@ -1,0 +1,10 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px;
+  background: var(--primary);
+}

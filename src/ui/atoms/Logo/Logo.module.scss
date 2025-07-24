@@ -1,0 +1,42 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  height: 36px;
+  padding: 0;
+
+  svg {
+    width: auto;
+    height: 100%;
+  }
+
+  @include xs {
+  }
+}
+
+.topbar {
+  @include m {
+    height: 42px;
+  }
+
+  @include l {
+    height: 48px;
+  }
+
+  @include xl {
+  }
+}
+
+.footer {
+  path {
+    fill: var(--white);
+  }
+
+  @include m {
+    height: 32px;
+  }
+}

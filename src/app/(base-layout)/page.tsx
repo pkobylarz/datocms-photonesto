@@ -1,3 +1,5 @@
+import Container from '@/ui/atoms/Container';
+import Separator from '@/ui/atoms/Separator';
 import Link from 'next/link';
 
 export const metadata = {
@@ -6,20 +8,28 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <>
-      <h3>Choose your preferred template:</h3>
-
+    <Container>
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <h3>Photonesto Landing Page</h3>
       <ul>
         <li>
-          <Link href="/basic">Basic:</Link> <span>Simpler code, great to start exploring</span>
+          <Link href="/basic">Wersja podstawowa - bez podglądu</Link>
         </li>
         <li>
-          <Link href="/real-time-updates">Real-time Updates:</Link>{' '}
-          <span>
-            Slightly more complex code, but content updates in real-time when Draft Mode is on
-          </span>
+          <Link href="/real-time-updates">Update treści live:</Link>
         </li>
       </ul>
-    </>
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+      <Separator size="60" />
+    </Container>
   );
 }

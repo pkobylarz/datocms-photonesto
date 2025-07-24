@@ -1,11 +1,12 @@
-import DraftModeToggler from '@/components/DraftModeToggler';
 import { TagFragment } from '@/lib/datocms/commonFragments';
 import { executeQuery } from '@/lib/datocms/executeQuery';
 import { graphql } from '@/lib/datocms/graphql';
 import { draftMode } from 'next/headers';
 import { toNextMetadata } from 'react-datocms';
 
-import './global.css';
+import { ProgressBar } from '@/ui/atoms/ProgressBar/ProgressBar';
+import Footer from '@/ui/organisms/Footer';
+import Topbar from '@/ui/organisms/Topbar';
 
 const query = graphql(
   /* GraphQL */ `
@@ -33,23 +34,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <header>
-          <h1>DatoCMS + Next.js Starter Kit</h1>
-          <nav>
-            <a className="navlink" href="https://www.datocms.com/docs/next-js">
-              📚 Full Integration Guide
-            </a>
-            <a className="navlink" href="/basic">
-              🔧 Basic Route
-            </a>
-            <a className="navlink" href="/real-time-updates">
-              ⚡️ Real-time Updates Route
-            </a>
-          </nav>
-          <DraftModeToggler draftModeEnabled={draftMode().isEnabled} />
-        </header>
-        <main>{children}</main>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/pbx7uun.css" />
+      </head>
+      <body className={`antialiased`}>
+        <ProgressBar>
+          <Topbar />
+          {children}
+          <Footer />
+        </ProgressBar>
       </body>
     </html>
   );

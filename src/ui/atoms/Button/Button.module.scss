@@ -1,0 +1,76 @@
+@import "@/ui/styles/breakpoints.scss";
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  border: 0;
+  border-radius: var(--radius-l);
+  min-width: 90px;
+  height: 48px;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-family: polymath, sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  will-change: color, background-color;
+
+  p {
+    margin: 0;
+  }
+
+  @include s {
+    min-width: 100px;
+  }
+
+  @include m {
+    min-width: 155px;
+    padding: 10px 16px;
+  }
+}
+
+.noMinWidth {
+  min-width: 20px;
+}
+
+.mobileLabel {
+  display: block;
+
+  @include m {
+    display: none;
+  }
+}
+
+.desktopLabel {
+  display: none;
+
+  @include m {
+    display: block;
+  }
+}
+
+.block {
+  width: 100%;
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.none {
+  background: none;
+  color: var(--primary);
+}
