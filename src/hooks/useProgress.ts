@@ -1,11 +1,11 @@
-import { useSpring } from "framer-motion";
-import { useEffect, useState } from "react";
-import useInterval from "./useInterval";
+import { useSpring } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import useInterval from './useInterval';
 
 export default function useProgress() {
-  const [state, setState] = useState<
-    "initial" | "in-progress" | "completing" | "complete"
-  >("initial");
+  const [state, setState] = useState<'initial' | 'in-progress' | 'completing' | 'complete'>(
+    'initial',
+  );
 
   const value = useSpring(0, {
     damping: 25,
@@ -33,35 +33,33 @@ export default function useProgress() {
 
       value.set(Math.min(current + diff, 99));
     },
-    state === "in-progress" ? 750 : null
+    state === 'in-progress' ? 750 : null,
   );
 
   useEffect(() => {
-    if (state === "initial") {
+    if (state === 'initial') {
       value.jump(0);
-    } else if (state === "completing") {
+    } else if (state === 'completing') {
       value.set(100);
     }
 
-    return value.on("change", (latest) => {
+    return value.on('change', (latest) => {
       if (latest === 100) {
-        setState("complete");
+        setState('complete');
       }
     });
   }, [value, state]);
 
   function reset() {
-    setState("initial");
+    setState('initial');
   }
 
   function start() {
-    setState("in-progress");
+    setState('in-progress');
   }
 
   function done() {
-    setState((state) =>
-      state === "initial" || state === "in-progress" ? "completing" : state
-    );
+    setState((state) => (state === 'initial' || state === 'in-progress' ? 'completing' : state));
   }
 
   return { state, value, start, done, reset };

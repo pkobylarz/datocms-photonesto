@@ -1,10 +1,10 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Image, { StaticImageData } from "next/image";
+'use client';
+import React, { useState, useEffect } from 'react';
+import Image, { StaticImageData } from 'next/image';
 
-import styles from "./QuoteCard.module.scss";
-import { useIntersectionObserver } from "usehooks-ts";
-import clsx from "clsx";
+import styles from './QuoteCard.module.scss';
+import { useIntersectionObserver } from 'usehooks-ts';
+import clsx from 'clsx';
 
 interface QuoteCardProps {
   quote: string;
@@ -12,16 +12,16 @@ interface QuoteCardProps {
   name: string;
   title: string;
   link: string;
-  delay?: "0" | "1" | "2";
+  delay?: '0' | '1' | '2';
 }
 
 export default function QuoteCard({
-  quote = "",
+  quote = '',
   avatar = null,
-  name = "",
-  title = "",
-  link = "",
-  delay = "0",
+  name = '',
+  title = '',
+  link = '',
+  delay = '0',
 }: QuoteCardProps) {
   const [isActive, setIsActive] = useState(false);
   const { isIntersecting, ref } = useIntersectionObserver({
@@ -49,9 +49,7 @@ export default function QuoteCard({
             <span>{title}</span>
           </p>
         </div>
-        {avatar && (
-          <Image src={avatar} alt={name} width="48" height="48" unoptimized />
-        )}
+        {avatar && <Image src={avatar} alt={name} width="48" height="48" unoptimized />}
       </a>
     </blockquote>
   );

@@ -1,9 +1,9 @@
-"use client";
-import React, { startTransition } from "react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+'use client';
+import React, { startTransition } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
-import { useProgressBar } from "@/ui/atoms/ProgressBar/ProgressBar";
+import { useProgressBar } from '@/ui/atoms/ProgressBar/ProgressBar';
 
 interface LinkLocalProps {
   href?: string;
@@ -11,9 +11,9 @@ interface LinkLocalProps {
   children?: React.ReactNode;
 }
 export default function LinkLocal({
-  href = "/",
-  className = "",
-  children = "Link",
+  href = '/',
+  className = '',
+  children = 'Link',
 }: LinkLocalProps) {
   const router = useRouter();
   const { start, done } = useProgressBar();

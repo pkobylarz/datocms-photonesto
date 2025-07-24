@@ -1,16 +1,16 @@
-import clsx from "clsx";
-import React from "react";
-import styles from "./Button.module.scss";
+import clsx from 'clsx';
+import React from 'react';
+import styles from './Button.module.scss';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  color?: "primary" | "secondary" | "light" | "none";
+  color?: 'primary' | 'secondary' | 'light' | 'none';
   noMinWidth?: boolean;
   mobileLabel?: React.ReactNode | string;
   children: React.ReactNode;
 }
 
 export default function Button({
-  color = "none",
+  color = 'none',
   noMinWidth = false,
   mobileLabel = null,
   children,
@@ -22,11 +22,7 @@ export default function Button({
       })}
     >
       {mobileLabel && <span className={styles.mobileLabel}>{mobileLabel}</span>}
-      {mobileLabel ? (
-        <span className={styles.desktopLabel}>{children}</span>
-      ) : (
-        children
-      )}
+      {mobileLabel ? <span className={styles.desktopLabel}>{children}</span> : children}
     </button>
   );
 }

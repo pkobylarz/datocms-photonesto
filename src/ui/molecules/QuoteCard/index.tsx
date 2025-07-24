@@ -1,1 +1,1 @@
-export { default } from "./QuoteCard";
+export { default } from './QuoteCard';

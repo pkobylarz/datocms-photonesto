@@ -1,24 +1,15 @@
 export const PhotonestoLogoFull = () => (
-  <svg
-    width="154"
-    height="43"
-    viewBox="0 0 154 43"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="154" height="43" viewBox="0 0 154 43" fill="none" xmlns="http://www.w3.org/2000/svg">
     <mask
       id="mask0_5566_16461"
-      style={{ maskType: "luminance" }}
+      style={{ maskType: 'luminance' }}
       maskUnits="userSpaceOnUse"
       x="1"
       y="0"
       width="152"
       height="43"
     >
-      <path
-        d="M152.768 0.976562H1.58301V42.6532H152.768V0.976562Z"
-        fill="white"
-      />
+      <path d="M152.768 0.976562H1.58301V42.6532H152.768V0.976562Z" fill="white" />
     </mask>
     <g mask="url(#mask0_5566_16461)">
       <path

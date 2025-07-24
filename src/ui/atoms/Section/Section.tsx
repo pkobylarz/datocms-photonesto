@@ -1,15 +1,15 @@
-import clsx from "clsx";
-import React from "react";
-import styles from "./Section.module.scss";
+import clsx from 'clsx';
+import React from 'react';
+import styles from './Section.module.scss';
 
 interface SectionProps {
-  bgColor?: "primary" | "secondary" | "light" | "none";
+  bgColor?: 'primary' | 'secondary' | 'light' | 'none';
   first?: boolean;
   last?: boolean;
   children: React.ReactNode;
 }
 export default function Section({
-  bgColor = "none",
+  bgColor = 'none',
   first = false,
   last = false,
   children,

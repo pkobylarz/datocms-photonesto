@@ -1,20 +1,20 @@
-import React from "react";
-import clsx from "clsx";
-import styles from "./Header.module.scss";
+import React from 'react';
+import clsx from 'clsx';
+import styles from './Header.module.scss';
 
 interface HeaderProps {
-  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  size?: "s" | "m" | "l";
-  weight?: "300" | "500" | "700";
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  size?: 's' | 'm' | 'l';
+  weight?: '300' | '500' | '700';
   center?: boolean;
   noMargin?: boolean;
   children: React.ReactNode;
 }
 
 export default function Header({
-  as = "h2",
-  size = "m",
-  weight = "700",
+  as = 'h2',
+  size = 'm',
+  weight = '700',
   center = false,
   noMargin = false,
   children,

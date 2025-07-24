@@ -1,9 +1,9 @@
-import React from "react";
-import clsx from "clsx";
-import styles from "./Paragraph.module.scss";
+import React from 'react';
+import clsx from 'clsx';
+import styles from './Paragraph.module.scss';
 
 interface ParagraphProps {
-  size?: "s" | "m" | "l";
+  size?: 's' | 'm' | 'l';
   center?: boolean;
   relative?: boolean;
   noMargin?: boolean;
@@ -11,7 +11,7 @@ interface ParagraphProps {
 }
 
 export default function Paragraph({
-  size = "m",
+  size = 'm',
   center = false,
   relative = false,
   noMargin = false,
